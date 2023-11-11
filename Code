@@ -1,7 +1,5 @@
 import datetime as d
 
-# print(d.datetime.now().hour)
-
 
 def tempo(a, b, c):
     periodo = d.datetime(2001, 2, 22, a, b, c)
