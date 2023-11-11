@@ -1,0 +1,20 @@
+import datetime as d
+
+# print(d.datetime.now().hour)
+
+
+def tempo(a, b, c):
+    periodo = d.datetime(2001, 2, 22, a, b, c)
+    if periodo.hour >= 12 and periodo.hour <= 18:
+        periodo = "Boa tarde"
+    elif periodo.hour >= 6 and periodo.hour < 12:
+        periodo = "Bom dia"
+    else:
+        periodo = "Boa noite"
+    return periodo
+
+
+periodo = tempo(22, 12, 1)
+nome = input("Como voce se chama? ")
+saudacao = f"{periodo} {nome}"
+print(saudacao)
